@@ -1,0 +1,28 @@
+{
+    "name": "sol-price-verifier",
+    "version": "1.0.0",
+    "description": "Solana verifier for SOL price prediction proofs",
+    "main": "scripts/solanaActionAgent.ts",
+    "scripts": {
+        "verify": "node scripts/verify_model1_proof.js",
+        "prove-and-verify": "node scripts/generate_and_verify_proof.js",
+        "start": "ts-node scripts/solanaActionAgent.ts",
+        "build": "tsc",
+        "test": "jest"
+    },
+    "dependencies": {
+        "@solana/web3.js": "^1.87.6",
+        "snarkjs": "^0.7.2",
+        "solana-agent-kit": "latest",
+        "dotenv": "^16.3.1",
+        "onnxruntime-web": "^1.16.3",
+        "axios": "^1.6.2"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.4",
+        "ts-node": "^10.9.2",
+        "jest": "^29.7.0",
+        "@types/jest": "^29.5.11",
+        "typescript": "^5.3.3"
+    }
+}
